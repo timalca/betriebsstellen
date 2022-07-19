@@ -1,18 +1,13 @@
 package de.alcantara.betriebsstellen.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Station {
 
 	private String code;
 
-	@JsonProperty("Name")
 	private String name;
 
-	@JsonProperty("Kurzname")
 	private String shortName;
 
-	@JsonProperty("Typ")
 	private String typ;
 
 	public String getCode() {
