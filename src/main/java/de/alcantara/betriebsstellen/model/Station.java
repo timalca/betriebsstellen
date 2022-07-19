@@ -1,7 +1,5 @@
 package de.alcantara.betriebsstellen.model;
 
-import org.springframework.beans.factory.annotation.Value;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Station {
@@ -33,7 +31,6 @@ public class Station {
 		this.name = name;
 	}
 
-	@Value("Kurzname")
 	public String getShortName() {
 		return shortName;
 	}
