@@ -10,8 +10,8 @@ import de.alcantara.betriebsstellen.utilities.StationMapper;
 public class StationService {
 
 	public static StationReturn findByCode(String code) {
-		List<Station> statonList = CSVParser.parse();
-		for (Station s : statonList) {
+                List<Station> stationList = CSVParser.parse();
+                for (Station s : stationList) {
 			if (s.getCode().equals(code)) {
 				return StationMapper.map(s);
 			}
